@@ -5,7 +5,7 @@
 <title></title>
 </head>
 <body>
-<a href="./cartao">Cartão</a><br/>
-<a href="./identificacao">Identificação</a>
+<a href="./cartao" target="_blank">Cartão</a><br/>
+<a href="./identificacao" target="_blank">Identificação</a>
 </body>
 </html>
