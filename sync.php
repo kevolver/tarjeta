@@ -24,5 +24,9 @@ class SyncCard {
 		if($a===$input) return true;
 		else return false;
 	}
+	
+	public function getTimestamp() {
+		return $this->timestamp;	
+	}
 }
 ?>

@@ -14,11 +14,15 @@ $diff = $term_now-$term_cod;
 
 if($diff>=0 && $diff<=30) { 
 	$antes = $now-$diff;
-	$check = $clock->decrypto($codigo, $antes); 
+	$check = $clock->decrypto($codigo, $antes);
 }
 else $check = false;
 
-if($check) die('<span style="color:#006600">Código válido!</span>');
+if($check) { 
+$testada = date("H:i:s", $now);
+$timestamp = date("H:i:s", $antes);
+die("<span style=\"color:#006600\">Código válido!</span><br/>Hora testada: {$testada}<br/>Hora do token: {$timestamp}</br>Diferença: {$diff}s");
+}
 
 die('<span style="color:#660000">Código inválido!</span>');
 
